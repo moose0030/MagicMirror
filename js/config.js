@@ -1,38 +1,38 @@
 var config = {
-    lang: 'nl',
+    lang: 'en',
     time: {
         timeFormat: 12,
         displaySeconds: true,
-        digitFade: false,
+        digitFade: true,
     },
     weather: {
         //change weather params here:
         //units: metric or imperial
         params: {
-            q: 'Baarn,Netherlands',
+            q: 'Ottawa,Canada',
             units: 'metric',
             // if you want a different lang for the weather that what is set above, change it here
-            lang: 'nl',
-            APPID: 'YOUR_FREE_OPENWEATHER_API_KEY'
+            lang: 'en',
+            APPID: '2a992273889b76177490c5c7d4cfa7b7'
         }
     },
     compliments: {
         interval: 30000,
         fadeInterval: 4000,
         morning: [
-            'Good morning, handsome!',
+            'Good mornin!',
             'Enjoy your day!',
             'How was your sleep?'
         ],
         afternoon: [
-            'Hello, beauty!',
-            'You look sexy!',
+            'Hello!',
+            'You look alright!',
             'Looking good today!'
         ],
         evening: [
-            'Wow, you look hot!',
+            'Wow, you look ... nevermind!',
             'You look nice!',
-            'Hi, sexy!'
+            'Hi!'
         ]
     },
     calendar: {
