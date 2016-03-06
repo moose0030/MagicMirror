@@ -2,7 +2,7 @@
 	$modules_folder = 'modules/';
 	$modules = array_filter(glob($modules_folder."*"), 'is_dir');
 	foreach ($modules as $module) {
-		//Add container arround module
+		//Add container around module
 		print_r( '<div id="'.substr($module, strlen($modules_folder)).'">' );
 		
 		//Load files to include
