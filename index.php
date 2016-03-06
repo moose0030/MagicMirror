@@ -37,6 +37,15 @@
 <script src="js/news/news.js"></script>
 <script src="js/main.js?nocache=<?php echo md5(microtime()) ?>"></script>
 <!-- <script src="js/socket.io.min.js"></script> -->
-<?php  include(dirname(__FILE__).'/controllers/modules.php');?>
+<?php  include(dirname(__FILE__).'/controllers/modules.php');
+echo "Test Post is Here>";
+   if( $_POST["name"] || $_POST["age"] ) {
+      if (preg_match("/[^A-Za-z'-]/",$_POST['name'] )) {
+         die ("invalid name and name should be alpha");
+      }
+      echo "Welcome ". $_POST['name']. "<br />";
+      echo "You are ". $_POST['age']. " years old.";
+   }
+?>
 </body>
 </html>
